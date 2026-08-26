@@ -1,0 +1,20 @@
+generated: '2026-08-25'
+method: searched
+source: https://lucemhealth.com/get-started/
+plan_count: 0
+model: contact-sales
+note: >-
+  Lucem Health publishes no pricing page and no plan tiers. The site sitemap
+  (https://lucemhealth.com/page-sitemap.xml, HTTP 200) lists 25 pages and contains no
+  /pricing/ or /plans/ URL. Commercial engagement is routed entirely through
+  "Get Started" (https://lucemhealth.com/get-started/, HTTP 200) and
+  "Solution Demo" (https://lucemhealth.com/solution-demo/) contact forms. Lucem Health
+  Reveal is sold as an enterprise clinical program to health systems and life-sciences
+  organizations, so an honest zero here reflects the business model, not a gap in the
+  search.
+plans: []
+probed:
+- url: https://lucemhealth.com/page-sitemap.xml
+  status: 200
+- url: https://lucemhealth.com/get-started/
+  status: 200

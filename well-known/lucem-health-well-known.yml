@@ -1,0 +1,56 @@
+generated: '2026-08-25'
+method: probed
+source: live HTTPS probes of every host named in apis.yml (2026-08-25)
+note: >-
+  Lucem Health runs a single WordPress marketing site at lucemhealth.com (www redirects
+  to the apex). No api., docs., developer., portal. or app. host resolves in DNS, so
+  lucemhealth.com and www.lucemhealth.com are the only hosts there are to probe. Every
+  /.well-known/ path returns the site's standard WordPress 404 template — a genuine
+  negative, not a catch-all: all nine probes returned HTTP 404 with an identical
+  42,529-byte body, and the same body is returned for a nonsense control path. NO
+  WellKnown or SecurityTxt pointer is emitted, because nothing was served.
+hit_count: 0
+soft_404_control:
+  path: /.well-known/security.txt
+  status: 404
+  bytes: 42529
+  observation: >-
+    All probed /.well-known/* paths return the identical 404 body and byte count, which
+    is the expected WordPress "page not found" template rather than an SPA catch-all 200.
+hosts:
+- host: https://lucemhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.lucemhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

@@ -64,5 +64,27 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lucem Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Lucem Health is a clinical-AI company founded in 2021 with Mayo Clinic Platform, backed by
+Mayo Clinic, Commure and Rally Ventures. Its Lucem Health Reveal programs apply clinically
+validated AI models to a health system's existing data to surface patients at elevated risk
+of serious or chronic disease — arrhythmias, colorectal cancer, liver disease, lung cancer
+and Type 1 diabetes — and deliver those insights into existing clinical workflows without
+changing how clinicians practice.
+
+- Website: https://lucemhealth.com/
+- Company: https://lucemhealth.com/company/
+- Blog: https://lucemhealth.com/blog/
+- Report a security issue: https://lucemhealth.com/report-security-issue/
+
+## Coverage
+
+**No public developer program.** Probed 2026-08-25: `api.`, `docs.`, `developer.`, `portal.`
+and `app.lucemhealth.com` do not resolve in DNS; the 25-page WordPress sitemap
+(`/page-sitemap.xml`, HTTP 200) contains no developer, documentation or pricing URL;
+`/llms.txt` and every `/.well-known/` path return HTTP 404. Integration is delivered as a
+managed service into EHR/PACS systems, and AI model partners engage through a partnership
+conversation rather than a self-service API.
+
+What this profile does record: a domain-security probe, a `/.well-known/` probe (all
+negative), the company's real vulnerability-disclosure page, and honest zeros for plans and
+rate limits.

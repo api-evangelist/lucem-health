@@ -1,0 +1,22 @@
+generated: '2026-08-25'
+method: searched
+source: https://lucemhealth.com/
+limit_count: 0
+note: >-
+  No rate limits are published because no public API is published. Contract discovery on
+  2026-08-25 found no developer portal, no API reference and no machine-readable spec on
+  any Lucem Health host (see x-coverage in apis.yml). There is therefore no documented
+  quota, window, burst allowance, 429 behaviour or RateLimit-* response header to record.
+  An honest zero.
+rate_limits: []
+response_headers: []
+probed:
+- url: https://api.lucemhealth.com/
+  status: 0
+  note: DNS does not resolve
+- url: https://developer.lucemhealth.com/
+  status: 0
+  note: DNS does not resolve
+- url: https://docs.lucemhealth.com/
+  status: 0
+  note: DNS does not resolve
