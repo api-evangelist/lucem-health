@@ -12,6 +12,17 @@ description: >-
   a managed service into EHR, PACS and other clinical systems; as of 2026-08-25 Lucem Health
   publishes no public developer portal, API reference or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/lucem-health/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://lucemhealth.com/wp-content/uploads/2022/07/LucemHealth-Full-Logo-in-Color.svg
 x-type: company
 x-source: harvest:secondary-market
