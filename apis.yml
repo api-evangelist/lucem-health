@@ -47,7 +47,7 @@ tags:
 - Company
 - Healthcare
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Clinical Decision Support
 - Early Disease Detection
 - Population Health
@@ -63,6 +63,7 @@ tags_raw:
 - Population Health
 - Life Sciences
 - Electronic Health Records
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
