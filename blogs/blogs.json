@@ -2,7 +2,7 @@
   "repo": "lucem-health",
   "feeds": [
     {
-      "source": "https://lucemhealth.com/",
+      "source": "https://lucemhealth.com/blog/",
       "feed_url": "https://lucemhealth.com/blog/feed/",
       "title": "",
       "saved": 0,
@@ -24,5 +24,5 @@
     }
   ],
   "post_count": 11,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
